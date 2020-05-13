@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+}
+
+.container {
+  padding: 0 35px;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.illustration{
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.info {
+  display: grid;
+  grid-row-gap: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.paragraph {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.btn {
+  width: 200px;  
+  border-radius: 30px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 0;  
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  user-select: none;
+}
+.btn:focus{
+  outline: none;
+}
+
+.social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+
+.attribution { font-size: 12px; text-align: center; margin-top: 20px; }
+.attribution a { color: white; }
+
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url('./images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    padding: 0 50px;
+    max-width: 1100px;
+  }
+
+  .logo {
+    width: 150px;
+    margin-left: 50px
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-left: 50px;
+  }
+
+  .illustration {
+    width: 600px;
+    height: 400px;
+    margin: 0;
+  }
+
+  .hero {
+    
+  }
+  .data {
+    margin: 30px 0;
+    width: 600px;
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+  .btn {
+    margin: 0;
+  }
+
+  .social-medias {
+    justify-content: flex-end;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1440px){
+  body {
+    border: 1px solid red;
+  }
+  .illustration {
+    width: 715px;
+    height: 500px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+
+  .container {
+    padding: 0 10px;
+    max-width: 1300px;
+  }
+
+  .data {
+    margin-top: 40px;
+    width: 460px;
+  }
+
+  .btn {
+    width: 180px;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .social-medias {
+    margin-top: 20px;
+  }
+}
